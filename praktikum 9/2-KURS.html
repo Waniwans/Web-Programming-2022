@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.KURS</title>
+</head>
+<body>
+    <h2>KURS RUPIAH</h2>
+
+  <label for="matauang">Mata Uang Asing</label>
+  <select id="matauang">
+      <option value="us">Dollar US</option>
+      <option value="sgp">Dollar Singapore</option>
+      <option value="mly">Ringgit Malaysia</option>
+      <option value="jpn">Yen Jepang</option>
+      <option value="eu">Euro</option>
+      <option value="arb">Riyal Arab Saudi</option>
+      <input id="berapa" type="number">
+
+  </select>
+  
+
+  <button onclick="hitungKursAsing()">Hitung</button>
+
+  <label for="rupiah">Rupiah</label>
+  <input id="rupiah" type="number">
+
+
+  <script>
+
+    function hitungKursAsing() {
+      const matauang = document.getElementById('matauang');
+      const rupiah = document.getElementById('rupiah');
+
+      if (matauang.value === 'us') {
+          rupiah.value = berapa.value * 9915;
+      }
+      if (matauang.value === 'sgp') {
+                rupiah.value = berapa.value * 13472;
+      }
+      if (matauang.value === 'mly') {
+                rupiah.value = berapa.value * 874;
+      }
+      if (matauang.value === 'jpn') {
+                rupiah.value = berapa.value * 120;
+      }
+      if (matauang.value === 'eu') {
+                rupiah.value = berapa.value * 15888;
+      }
+      if (matauang.value === 'arb') {
+                rupiah.value = berapa.value * 3592;
+      }
+      
+    }
+
+  </script>
+</body>
+</html>
